@@ -30,7 +30,7 @@ This repository contains a Test Automation Framework built using Playwright and 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.gamma.bcg.com/Gamma-D/playwright-ui-automation-framework
+   git clone https://github.com/sayan-tan/playwright-ui-automation.git
    ```
 
 2. Navigate to the project directory:
@@ -111,10 +111,10 @@ The tests follow a modular and maintainable structure:
 ```
 
 - `pages`: Contains the Page Object Model (POM) classes representing web pages and their elements.
-- `playwright-report`: Contains the HTML report for tests (Logs, Screenshots, Traces and Videos are attached).
+- `playwright-report`: Contains the HTML report for tests (Logs, Screenshots, Traces, and Videos are attached).
 - `test-data`: Contains external files (example: login credentials data) that can be used to mock data during tests.
 - `tests-saucedemo`: Contains the actual test files. You can organize your tests into subdirectories as needed. 
-- `utils`: Contains the Utilities that provides methods for asserting different conditions on web elements, waits.
+- `utils`: Contains the Utilities that provide methods for asserting different conditions on web elements, and waits.
 
 ## ⚙️ Configuration
 
@@ -129,11 +129,11 @@ The tests follow a modular and maintainable structure:
 
 ## 🔄 Continuous Integration
 
-This project is configured for CI using Github Actions. Check the configurations in `.github/workflows/*.yml`.
+This project is configured for CI using GitHub Actions. Check the configurations in `.github/workflows/*.yml`.
 
-- `01_ui_tests_chrome.yml`: This workflow executes tests in Chrome browser.
+- `01_ui_tests_chrome.yml`: This workflow executes tests in the Chrome browser.
 
-- `02_ui_tests_select_one.yml`: This workflow will first ask User to select the browser for tests execution.
+- `02_ui_tests_select_one.yml`: This workflow will first ask the User to select the browser for test execution.
 
 - `03_ui_tests_ALL.yml`: This workflow executes the tests in all browsers <!-- #(CHROME, EDGE, WEBKIT, CHROMIUM, FIREFOX) -->
 
@@ -144,4 +144,4 @@ This project is configured for CI using Github Actions. Check the configurations
 
 ## 📊 Reporting
 
-Playwright HTML report (Logs, Screenshots, Traces and Videos are attached) is stored in the `playwright-report` directory.
+The Playwright HTML report (Logs, Screenshots, Traces, and Videos are attached) is stored in the `playwright-report` directory.
